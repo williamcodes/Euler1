@@ -1,0 +1,23 @@
+
+<SCRIPT>
+var capBelow = prompt("Choose a number for all multiples to be below",1000);
+var mult1 = prompt("Choose the first multiple to use",3);
+var mult2 = prompt("Choose the second multiple to use",5);
+var cap = capBelow - 1;
+var mMax = Math.floor(cap/mult1);
+var nMax = Math.floor(cap/mult2);
+var sum = 0;
+var m = 1;
+var n = 1;
+while (m<=mMax)
+ {
+ sum = sum + 3*m;
+ m++;
+ }
+while (n<=nMax)
+ {
+ sum = sum + 5*n;
+ n++;
+ }
+alert(sum);
+</SCRIPT>
